@@ -1,0 +1,37 @@
+<div  class=" justify-center items-center h-screen rounded-r-3xl hidden laptop:block">
+    <div class="h-[90%] w-[90%] p-2">
+        <div class="flex justify-center items-center h-[15%]">
+            <img class="h-[200px] w-[200px]"
+                src="{{img_logo}}"
+                alt="">
+        </div>
+        <div class="h-[70%]">
+            <ul *ngFor="let i of listMenu"  class="flex flex-col items-center space-y-4 pt-4">
+                <li class="flex items-center justify-center space-x-3 h-[50px] w-[100%]  hover:scale-125 transition ease-in-out cursor-pointer">
+                    <span class="flex justify-end items-center w-[25%] h-8">
+                        <i class="{{i.icons}}" aria-hidden="true"></i>
+                    </span>
+                    <span class="flex justify-start items-center w-[65%] h-8">{{i.name}}</span>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="h-[15%">
+            <ul class="flex flex-col items-center pt-4">
+                <li class="flex items-center justify-center space-x-3 h-[50px] w-[100%] text-black hover:scale-125 hover:text-black transition ease-in-out cursor-pointer">
+                    <span class="flex justify-end items-center w-[25%] h-8">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                    </span>
+                    <span class="flex justify-start  items-center w-[65%] h-8">Setting</span>
+                </li>
+                <li class="flex items-center justify-center space-x-3 h-[50px] w-[100%]  text-slate-300 hover:text-red-600 hover:scale-125 transition ease-in-out">
+                    <span class="flex justify-end items-center w-[25%] h-8">
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    </span>
+                    <span class="flex justify-start items-center w-[65%] h-8">Direcoty</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Icon bars -->
